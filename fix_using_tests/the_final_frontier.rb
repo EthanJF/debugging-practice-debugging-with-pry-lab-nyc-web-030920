@@ -12,11 +12,7 @@ def crew
 end
 
 def greet_crew (crew)
-  new_crew = crew.map do |crew_member| 
-    "Hello #{crew_member}."
-  end
-  new_crew
-  # binding.pry
+  crew.map{ |crew_member| "Hello #{crew_member}."}
 end
 
 def engage
