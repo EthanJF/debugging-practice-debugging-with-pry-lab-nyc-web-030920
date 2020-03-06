@@ -12,7 +12,7 @@ def crew
 end
 
 def greet_crew (crew)
-  new_crew = crew.each do |crew_member| 
+  new_crew = crew.map do |crew_member| 
     "Hello #{crew_member}."
   end
   new_crew
