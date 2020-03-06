@@ -10,8 +10,6 @@ end
 
 def turtle_traits(turtles)
   turtles.map do |turtle|
-    turtle[:trains].turtle[:traits].each do |trait|
-      trait
-    end
+    turtle[:trains].kind_of?(Array) ? turtle[:traits].each { |trait| trait} : turtle[:traits]
   end
 end
